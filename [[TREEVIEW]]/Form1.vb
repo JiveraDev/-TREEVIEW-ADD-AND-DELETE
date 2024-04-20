@@ -14,7 +14,7 @@
 
 
         If frsttreeview.SelectedNode IsNot Nothing Then
-            Dim result As DialogResult = MessageBox.Show("are you sure to delete: \n" + frsttreeview.SelectedNode.Text, "Caution", MessageBoxButtons.OKCancel)
+            Dim result As DialogResult = MessageBox.Show("are you sure to delete:" & vbCrLf & frsttreeview.SelectedNode.Text, "Caution", MessageBoxButtons.OKCancel)
             If result = DialogResult.OK Then
                 frsttreeview.SelectedNode.Nodes.Remove(frsttreeview.SelectedNode)
             End If
